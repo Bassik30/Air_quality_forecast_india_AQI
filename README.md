@@ -97,3 +97,11 @@ air_quality_forecast_india/
 **Prophet — prévision & composantes (Delhi)**  
 ![prophet-fore](figs/output_68_0.png)  
 ![prophet-comp](figs/output_68_1.png)
+
+---
+
+## 📄 Rapport complet
+
+👉 **[Télécharger le rapport complet (PDF)](docs/rapport_AQI_Inde.pdf)**  
+*(LaTeX, 20+ pages — méthodologie, EDA, modèles, prévisions, recommandations)*
+
