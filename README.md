@@ -1,6 +1,6 @@
 # 🌍 Analyse temporelle et prédictive de la qualité de l’air en Inde (2015–2020)
 
-**Objectif.** Étudier l’évolution quotidienne de la pollution atmosphérique (AQI) dans les grandes villes indiennes (2015–2020) et **prédire** l’AQI à court/moyen terme pour **anticiper les risques sanitaires et environnementaux**.
+**Objectif:** Étudier l’évolution quotidienne de la pollution atmosphérique (AQI) dans les grandes villes indiennes (2015–2020) et **prédire** l’AQI à court/moyen terme pour **anticiper les risques sanitaires et environnementaux**.
 
 **Problématiques**
 1) Comment l’évolution quotidienne de la pollution a-t-elle varié entre 2015 et 2020 ?  
