@@ -66,8 +66,8 @@ air_quality_forecast_india/
 │  ├─ output_68_0.png
 │  └─ output_68_1.png
 ├─ requirements.txt
-└─ README.md`
-
+└─ README.md
+```
 
 
 ## 📊 Résultats clés (aperçu visuel)
