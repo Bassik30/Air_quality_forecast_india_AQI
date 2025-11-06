@@ -103,5 +103,4 @@ air_quality_forecast_india/
 ## 📄 Rapport complet
 
 👉 **[Télécharger le rapport complet (PDF)](docs/rapport_AQI_Inde.pdf)**  
-*(LaTeX, 20+ pages — méthodologie, EDA, modèles, prévisions, recommandations)*
 
