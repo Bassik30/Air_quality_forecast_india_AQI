@@ -66,7 +66,7 @@ air_quality_forecast_india/
 │  ├─ output_68_0.png
 │  └─ output_68_1.png
 ├─ requirements.txt
-└─ README.md
+└─ README.md`
 
 
 
@@ -82,7 +82,7 @@ air_quality_forecast_india/
 **Variabilité inter-villes (boxplot)**  
 ![boxplot](figs/output_40_0.png)
 
-**Évolution temporelle — 3 villes (30j)**  
+**Évolution temporelle dans 3 villes (30j)**  
 ![evo-3villes](figs/output_44_0.png)
 
 **Mensuel & saisonnier**  
