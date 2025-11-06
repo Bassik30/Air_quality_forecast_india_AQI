@@ -74,29 +74,44 @@ air_quality_forecast_india/
 
 **Valeurs manquantes (avant interpolation)**  
 ![missing](figs/output_24_0.png)
+Certaines variables présentent de fortes proportions de valeurs manquantes (jusqu’à 60 % pour *Xylene*). Cela justifie la suppression de cette variable et l’application d’une interpolation linéaire par ville afin de préserver la cohérence temporelle du jeu de données.
+
 
 **Distribution AQI & classes**  
 ![dist](figs/output_36_0.png)  
+La distribution de l’AQI est très asymétrique avec une longue queue à droite, indiquant des épisodes fréquents de pollution extrême.  
+
 ![classes](figs/output_36_2.png)
+La majorité des jours se situent entre les catégories *Moderate* et *Poor*, illustrant une pollution chronique dans la plupart des villes étudiées.
+
 
 **Variabilité inter-villes (boxplot)**  
 ![boxplot](figs/output_40_0.png)
+Delhi se distingue nettement avec les niveaux d’AQI les plus élevés et les plus volatils. Shillong et Coimbatore affichent les indices les plus faibles, ce qui traduit l’impact de la densité urbaine et du trafic routier sur la qualité de l’air.
 
 **Évolution temporelle dans 3 villes (30j)**  
 ![evo-3villes](figs/output_44_0.png)
+Toutes les séries présentent un cycle saisonnier marqué. La pollution atteint son maximum pendant l’hiver (novembre–janvier) et diminue pendant la mousson (juin–septembre). Delhi conserve des niveaux systématiquement plus élevés que Kolkata et Guwahati.
 
 **Mensuel & saisonnier**  
 ![month](figs/output_45_0.png) ![season](figs/output_45_1.png)
+Les concentrations de polluants augmentent fortement à la fin de l’automne et en hiver, probablement à cause des inversions thermiques et du brûlage agricole.  
+La saison hivernale est la période la plus critique, tandis que la mousson améliore nettement la qualité de l’air grâce au lessivage atmosphérique.
 
 **Carte Folium — AQI moyen (2015–2020)**  
 ![map](figs/output_47_0.png)
+La carte met en évidence un gradient géographique nord–sud. Le nord (Delhi, Amritsar, Kolkata, Guwahati) est le plus pollué, tandis que le sud (Coimbatore, Amaravati) affiche des niveaux d’AQI plus faibles grâce à une meilleure dispersion des particules.
 
 **Random Forest — importance & perf**  
 ![rf-imp](figs/output_58_1.png) ![rf-scatter](figs/output_59_0.png)
+Les particules fines PM₂.₅ et PM₁₀ sont les variables les plus déterminantes dans la prédiction de l’AQI. Les gaz tels que NO₂ et CO contribuent également mais dans une moindre mesure.  
+Les valeurs prédites s’alignent étroitement sur la diagonale, avec un R² ≈ 0.90. Le modèle reproduit fidèlement les niveaux de pollution, sauf lors des épisodes extrêmes où il tend à sous-estimer.
 
 **Prophet — prévision & composantes (Delhi)**  
 ![prophet-fore](figs/output_68_0.png)  
 ![prophet-comp](figs/output_68_1.png)
+Prophet détecte une légère tendance à la baisse de l’AQI moyen depuis 2017, suggérant un effet des politiques environnementales et du ralentissement industriel en 2020.  
+La composante saisonnière montre des pics récurrents entre octobre et janvier. La pollution reste fortement saisonnière malgré une amélioration progressive du niveau de fond.
 
 ---
 
