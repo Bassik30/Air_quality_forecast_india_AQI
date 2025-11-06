@@ -68,7 +68,7 @@ air_quality_forecast_india/
 ├─ requirements.txt
 └─ README.md
 
----
+
 
 ## 📊 Résultats clés (aperçu visuel)
 
