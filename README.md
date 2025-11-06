@@ -40,5 +40,60 @@
 
 ---
 
-## 📁 Structure du repo (suggestion)
+## 📁 Structure du repo
 
+Voici l’organisation du projet :
+
+```text
+air_quality_forecast_india/
+├─ data/
+│  └─ city_day.csv
+├─ notebooks/
+│  ├─ 01_eda_cleaning.ipynb
+│  ├─ 02_model_random_forest.ipynb
+│  └─ 03_forecast_prophet_delhi.ipynb
+├─ figs/
+│  ├─ output_24_0.png
+│  ├─ output_36_0.png
+│  ├─ output_36_2.png
+│  ├─ output_40_0.png
+│  ├─ output_44_0.png
+│  ├─ output_45_0.png
+│  ├─ output_45_1.png
+│  ├─ output_47_0.png
+│  ├─ output_58_1.png
+│  ├─ output_59_0.png
+│  ├─ output_68_0.png
+│  └─ output_68_1.png
+├─ requirements.txt
+└─ README.md
+
+---
+
+## 📊 Résultats clés (aperçu visuel)
+
+**Valeurs manquantes (avant interpolation)**  
+![missing](figs/output_24_0.png)
+
+**Distribution AQI & classes**  
+![dist](figs/output_36_0.png)  
+![classes](figs/output_36_2.png)
+
+**Variabilité inter-villes (boxplot)**  
+![boxplot](figs/output_40_0.png)
+
+**Évolution temporelle — 3 villes (30j)**  
+![evo-3villes](figs/output_44_0.png)
+
+**Mensuel & saisonnier**  
+![month](figs/output_45_0.png) ![season](figs/output_45_1.png)
+
+**Carte Folium — AQI moyen (2015–2020)**  
+![map](figs/output_47_0.png)
+
+**Random Forest — importance & perf**  
+![rf-imp](figs/output_58_1.png) ![rf-scatter](figs/output_59_0.png)
+
+**Prophet — prévision & composantes (Delhi)**  
+![prophet-fore](figs/output_68_0.png)  
+![prophet-comp](figs/output_68_1.png)
